@@ -1,8 +1,8 @@
 <#
-.SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+SYNOPSIS
+    Remediation using powershell script for the STIG - WN11-SO-000025 - The built-in guest account must be renamed.
 
-.NOTES
+NOTES
     Author          : Christopher Rajasekar
     LinkedIn        : https://www.linkedin.com/in/christopherrajasekar/
     GitHub          : https://github.com/Chrisrajasekar
@@ -13,16 +13,16 @@
     Plugin IDs      : N/A
     STIG-ID         : WN11-SO-000025
 
-.TESTED ON
-    Date(s) Tested  : Feb 15 2026
-    Tested By       : Christopher Rajasekar
-    Systems Tested  : Windows 11
+TESTED ON
+    Date(s) Tested  : 
+    Tested By       : 
+    Systems Tested  : 
     PowerShell Ver. : 
-
-.USAGE
-    Put any usage instructions here.
-    Example syntax:
-    PS C:\> .\__remediation_template(STIG-ID-WN10-AU-000500).ps1 
 #>
 
-# YOUR CODE GOES HERE
+# CODE
+# Get the Guest account object
+$guest = Get-LocalUser -Name "Guest"
+
+# Rename to a new name (e.g., "SysGuest01")
+Rename-LocalUser -InputObject $guest -NewName "SysGuest01"

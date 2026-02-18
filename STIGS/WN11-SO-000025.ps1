@@ -19,7 +19,6 @@ TESTED ON
     Systems Tested  : 
     PowerShell Ver. : 
 #>
-
 # CODE
 # Get the Guest account object
 $guest = Get-LocalUser -Name "Guest"

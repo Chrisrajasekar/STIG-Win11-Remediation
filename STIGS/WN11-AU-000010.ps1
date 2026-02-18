@@ -19,9 +19,6 @@ TESTED ON
     Systems Tested  : 
     PowerShell Ver. : 
 #>
-# Configuration changes
-
-
 Code
 # Enable auditing of Credential Validation SUCCESS events
 auditpol /set /subcategory:"Credential Validation" /success:enable

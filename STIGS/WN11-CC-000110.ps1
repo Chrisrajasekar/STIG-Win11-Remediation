@@ -38,3 +38,7 @@ New-ItemProperty -Path $regPath `
     -Force | Out-Null
 
 Write-Output "Remediation applied: Printing over HTTP has been disabled."
+
+Result:
+ The command was successfully executed.Remediation applied: Printing over HTTP has been disabled.
+
